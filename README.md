@@ -114,7 +114,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For inquiries or support, please contact:
 - **Author**: Sai Magar
 - **Email**: magarsai000@example.com(mailto:magarsai000@example.com)
-- **LinkedIn**: [Sai_Magar](https://www.linkedin.com/in/sai-magar25/)
+- **LinkedIn**: Sai_Magar (https://www.linkedin.com/in/sai-magar25/)
 
 ---
 
