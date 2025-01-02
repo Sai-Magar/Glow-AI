@@ -84,6 +84,23 @@ GlowAI/
 
 ---
 
+## Frontend Details
+
+### Features
+
+- **Hero Section**: Features a dynamic and visually appealing introduction to GlowAI, complete with call-to-action buttons and statistics about user satisfaction.
+- **Analysis Section**: Allows users to upload their photos for skin analysis, providing clear steps and user guidance.
+- **Features and Testimonials**: Highlights the benefits of GlowAI and showcases real user experiences.
+- **Footer**: Provides quick links, social media icons, and a newsletter subscription form for user engagement.
+
+### Technology Stack
+- **HTML5**: Semantic structure for web pages.
+- **CSS3**: Custom styles for design and layout, with responsiveness.
+- **JavaScript**: Dynamic content rendering and interactivity.
+- **GSAP**: Animations for a smooth and engaging user experience.
+
+---
+
 ## Technology Stack
 
 - **Backend**: Flask, OpenCV, NumPy
@@ -113,7 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For inquiries or support, please contact:
 - **Author**: Sai Magar
-- **Email**: magarsai000@example.com(mailto:magarsai000@example.com)
+- **Email**: magarsai000@example.com
 - **LinkedIn**: Sai_Magar (https://www.linkedin.com/in/sai-magar25/)
 
 ---
