@@ -1,0 +1,134 @@
+// Variables
+$primary-color: #FF6B6B;
+$secondary-color: #4ECDC4;
+$text-color: #2C3E50;
+$background-color: #F8F9FA;
+$font-heading: 'Playfair Display', serif;
+$font-body: 'Poppins', sans-serif;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+// Global Styles
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-body;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+// Animations
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Navigation
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .logo h1 {
+        font-family: $font-heading;
+        color: $primary-color;
+        margin: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+// Hero Section
+.hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 6rem 4rem;
+    gap: 2rem;
+
+    .hero-content {
+        @include flex-center;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        h1 {
+            font-family: $font-heading;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+    }
+}
+
+// Analysis Section
+.analysis-section {
+    padding: 4rem;
+    background: white;
+    
+    .upload-container {
+        @include flex-center;
+        min-height: 400px;
+    }
+
+    .upload-box {
+        @include card-shadow;
+        padding: 2rem;
+        width: 100%;
+        max-width: 600px;
+        background: white;
+        text-align: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+} 

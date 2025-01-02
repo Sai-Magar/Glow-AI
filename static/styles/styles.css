@@ -1,0 +1,48 @@
+/* Add these to your existing CSS */
+.upload-box.dragover {
+    border-color: #3498db;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.skin-type-result, .recommendations-result {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations-result ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.recommendations-result li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.recommendations-result li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+} 
